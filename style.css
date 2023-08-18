@@ -258,3 +258,81 @@
                                 height: 200px;
                                 color: white;
                             }
+                            
+                            .ball-container {
+                                position: fixed;
+                                transform: scale(0.7) !important;
+                                bottom: 20px;
+                                right: 20px;
+                                width: 60px;
+                                height: 60px;
+                                overflow: hidden;
+                                z-index: 999;
+                                background-color: rgb(250, 250, 250);
+                                padding: 40px !important;
+                                border-radius: 100%;
+                                transition: all 0.3s;
+                                cursor: pointer;
+                            }
+                            
+                            body,
+                            html {
+                                margin: 0;
+                                padding: 0;
+                                height: 100%;
+                                font-family: Arial, sans-serif;
+                            }
+                            
+                            .ball {
+                                position: absolute;
+                                bottom: 0px;
+                                right: 0;
+                                width: 100%;
+                                height: 50px;
+                                transition: width 0.5s ease-in-out, height 0.5s ease-in-out, background-color 0.5s ease-in-out;
+                                z-index: 998;
+                            }
+                            
+                            .content {
+                                height: auto;
+                                /* Ajusta la altura según tu contenido */
+                            }
+                            
+                            .arrow {
+                                position: absolute;
+                                top: 0px;
+                                right: 0px;
+                                border-radius: 100%;
+                                width: 100%;
+                                height: 100%;
+                                transform: scale(0.9);
+                                z-index: 999;
+                                background-color: black;
+                                overflow: hidden;
+                                transition: all 0.3s;
+                            }
+                            
+                            .ball-container:hover>.arrow svg {
+                                transition: all 0.3s;
+                                animation: arriba 1s infinite;
+                            }
+                            
+                            .arrow svg {
+                                transform: scale(0.7);
+                                width: 100%;
+                                height: 100%;
+                                top: 40px;
+                                color: white;
+                            }
+                            
+                            @keyframes arriba {
+                                0% {
+                                    transform: translateY(0px);
+                                }
+                                50% {
+                                    transform: translateY(-20px);
+                                }
+                                100% {
+                                    transform: translateY(0px);
+                                }
+                            }
