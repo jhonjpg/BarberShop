@@ -1,0 +1,260 @@
+                            body {
+                                background-color: black;
+                            }
+                            
+                            .fade-in {
+                                opacity: 0;
+                            }
+                            
+                            .active {
+                                animation: fade 1s 1;
+                                opacity: 1;
+                            }
+                            
+                            @keyframes fade {
+                                0% {
+                                    transform: translateY(200px);
+                                    opacity: 0;
+                                }
+                                100% {
+                                    transform: translateY(0px);
+                                    opacity: 1;
+                                }
+                            }
+                            
+                            .animator {
+                                animation: animator 2s 1;
+                                transition: 2s;
+                                background-color: black;
+                                transform: translateY(-490px);
+                                background: linear-gradient(black, black, black, rgba(0, 0, 0, 0.555), transparent);
+                            }
+                            
+                            @keyframes animator {
+                                0% {
+                                    transform: translateY(0px);
+                                    background: linear-gradient(black, black, black, rgba(0, 0, 0, 0.555), transparent);
+                                }
+                                100% {
+                                    transform: translateY(-490px);
+                                    background: linear-gradient(black, black, black, rgba(0, 0, 0, 0.555), transparent);
+                                }
+                            }
+                            /* device */
+                            
+                            @media (min-width: 800px) {
+                                .animator {
+                                    animation: animator 2s 1;
+                                    transition: 2s;
+                                    background-color: black;
+                                    transform: translateX(-290px);
+                                    background: linear-gradient(to right, black, black, black, rgba(0, 0, 0, 0.555), transparent);
+                                }
+                                @keyframes animator {
+                                    0% {
+                                        transform: translateX(0px);
+                                        background: linear-gradient(to right, black, black, black, rgba(0, 0, 0, 0.555), transparent);
+                                    }
+                                    50% {
+                                        background: linear-gradient(to right, black, black, black, rgba(0, 0, 0, 0.555), transparent);
+                                    }
+                                    100% {
+                                        transform: translateX(-290px);
+                                        background: linear-gradient(to right, black, black, black, rgba(0, 0, 0, 0.555), transparent);
+                                    }
+                                }
+                            }
+                            
+                            section {
+                                background-color: black;
+                            }
+                            
+                            .nombres {
+                                background-color: rgba(0, 0, 0, 0.431);
+                            }
+                            
+                            .card {
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 320px;
+                                box-shadow: #fbcc15 0px 2px 5px -1px, #fbcc15 0px 1px 3px -1px;
+                                padding: 32px;
+                                overflow: hidden;
+                                border-radius: 10px;
+                                transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+                                background-color: rgb(14, 14, 14) !important;
+                            }
+                            
+                            .content {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                gap: 20px;
+                                color: #e8e8e8;
+                                transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+                                background-color: rgb(14, 14, 14) !important;
+                            }
+                            
+                            .content .heading {
+                                font-weight: 700;
+                                font-size: 32px;
+                            }
+                            
+                            .content .para {
+                                line-height: 1.5;
+                            }
+                            
+                            .content .btn {
+                                color: #e8e8e8;
+                                text-decoration: none;
+                                padding: 10px;
+                                font-weight: 600;
+                                border: none;
+                                cursor: pointer;
+                                background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+                                border-radius: 5px;
+                                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+                            }
+                            
+                            .card::before {
+                                content: "";
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                width: 100%;
+                                height: 5px;
+                                background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+                                z-index: -1;
+                                transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+                            }
+                            
+                            .card:hover::before {
+                                height: 100%;
+                            }
+                            
+                            .card:hover {
+                                box-shadow: none;
+                            }
+                            
+                            .card:hover .btn {
+                                color: #212121;
+                                background: #e8e8e8;
+                            }
+                            
+                            .content .btn:hover {
+                                outline: 2px solid #e8e8e8;
+                                background: transparent;
+                                color: #e8e8e8;
+                            }
+                            
+                            .content .btn:active {
+                                box-shadow: none;
+                            }
+                            
+                            .carousel {
+                                position: relative;
+                                width: 600px;
+                                height: 400px;
+                                overflow: hidden;
+                                padding: 20px !important;
+                            }
+                            
+                            .carousel-item {
+                                position: absolute;
+                                width: 100%;
+                                height: 100%;
+                                opacity: 0;
+                                transition: opacity 1s ease-in-out;
+                            }
+                            
+                            .carousel-item:nth-child(1) {
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image: url('https://images.pexels.com/photos/2809652/pexels-photo-2809652.jpeg?auto=compress&cs=tinysrgb&w=800');
+                            }
+                            
+                            .carousel-item:nth-child(2) {
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image: url('https://images.pexels.com/photos/3993447/pexels-photo-3993447.jpeg?auto=compress&cs=tinysrgb&w=800');
+                            }
+                            
+                            .carousel-item:nth-child(3) {
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image: url('https://images.pexels.com/photos/897262/pexels-photo-897262.jpeg?auto=compress&cs=tinysrgb&w=800');
+                            }
+                            
+                            .carousel-item:nth-child(4) {
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image: url('https://images.pexels.com/photos/3998429/pexels-photo-3998429.jpeg?auto=compress&cs=tinysrgb&w=800');
+                            }
+                            
+                            .carousel-item:nth-child(5) {
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image: url('https://images.pexels.com/photos/1813346/pexels-photo-1813346.jpeg?auto=compress&cs=tinysrgb&w=800');
+                            }
+                            
+                            .carousel-item:nth-child(6) {
+                                background-size: cover;
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-image: url('https://images.pexels.com/photos/3356174/pexels-photo-3356174.jpeg?auto=compress&cs=tinysrgb&w=800');
+                            }
+                            
+                            .carousel-item.active {
+                                opacity: 1;
+                            }
+                            
+                            .carousel-controls {
+                                position: absolute;
+                                bottom: 20px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                display: flex;
+                            }
+                            
+                            .carousel-control {
+                                width: 12px;
+                                height: 12px;
+                                border-radius: 50%;
+                                background-color: #666;
+                                margin: 0 6px;
+                                cursor: pointer;
+                            }
+                            
+                            .carousel-control.active {
+                                background-color: #333;
+                            }
+                            
+                            .sha {
+                                box-shadow: rgba(243, 243, 243, 0.35) 0px 5px 15px;
+                            }
+                            
+                            .shi {
+                                box-shadow: rgba(252, 191, 38, 0.294) 0px 50px 100px -40px, rgba(252, 191, 38, 0.411) 0px 30px 60px -30px, rgba(252, 191, 38, 0.26) 0px -2px 6px 0px inset;
+                            }
+                            
+                            .fade-on {
+                                visibility: hidden;
+                                opacity: 0;
+                                height: 0px;
+                                transition: opacity 0.5s ease-in-out;
+                                transition: all 1s;
+                            }
+                            
+                            .fade-on.visible {
+                                visibility: visible;
+                                opacity: 1;
+                                height: 200px;
+                                color: white;
+                            }

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcCXSasea-W3LvEe-iqd2RxrvlRfeBUG_IGA&usqp=CAU" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css">
+
+
+
+
+
+</head>
+
+<body class="bg-black">
+
+
+
+    <section class="w-screen h-screen flex flex-col md:flex-row overflow-hidden">
+
+        <header class="w-screen bg-black scale-75  h-3/6 flex flex-col items-center p-3 justify-center  gap-5 md:h-full scale-105 ">
+
+            <h1 class="text-2xl text-white w-10/12 text-center md:text-5xl">
+                Cortes de cabello personalizados para cada estilo y preferencia.
+            </h1>
+
+            <p class="text-xl text-center text-gray-300 md:text-2xl">
+                Afeitados clásicos y modernos que te dejarán con una piel suave y fresca.
+            </p>
+
+            <button class="w-40 bg-yellow-300 p-2 rounded-lg">
+                Reservación
+            </button>
+
+
+
+            <ul class="w-100 p-1 flex flex-col gap-6 pt-3 text-white">
+
+
+                <li class="w-full flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+  </svg> 9:00Am - 7:00Pm</li>
+
+                <li class="w-full flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg>Carretera Moca, Santiago</li>
+
+                <li class="w-full flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg> 870-445-4334</li>
+
+                <li class="w-full flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+              </svg> Miinka@gmail.com</li>
+
+
+
+            </ul>
+
+
+        </header>
+
+        <aside class="w-screen h-3/6 overflow-hidden relative md:h-full">
+
+            <div class="w-full h-full">
+                <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/3998427/pexels-photo-3998427.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+            </div>
+
+            <div class="animator w-full h-full absolute top-0 md:absolute ">cc</div>
+
+        </aside>
+
+    </section>
+
+    <section class=" fade-in w-full p-3 flex flex-col overflow-hidden items-center gap-3">
+
+        <h2 class="text-2xl  text-white ">Conoce nuestra historia</h2>
+
+        <div class="w-full flex items-center justify-center gap-3">
+
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+            <svg class="rotate-90	scale-105	text-yellow-300	" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+                <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+              </svg>
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+
+        </div>
+
+
+
+
+        <div class="text-white w-full  flex flex-col gap-3 items-center md:flex-row items-center justify-evenly ">
+
+
+
+            <aside class=" sha w-10/12	 h-96 	 overflow-hidden md:w-72 h-96	overflow-hidden"><img class=" justify-self-start	  w-full h-full object-fit-cover" src="https://images.pexels.com/photos/2068672/pexels-photo-2068672.jpeg?auto=compress&cs=tinysrgb&w=800" alt=""></aside>
+
+
+
+            <div class="w-full flex flex-col items-center gap-4 md:w-2/4  h-2/3	 justify-evenly">
+                <p> No somos solo un lugar para cortes de cabello y afeitados, somos una historia en constante evolución. Fundada en [Año de Fundación], nuestra barbería nació de una pasión compartida por la autenticidad, el estilo y el cuidado personal para
+                    hombres. A lo largo de los años, hemos cultivado una comunidad de clientes leales que confían en nosotros para brindarles no solo un servicio excepcional, sino también una experiencia única.
+
+
+                </p>
+
+                <p> Nuestro Equipo: Detrás de cada corte de cabello y afeitado está un equipo de barberos altamente capacitados y apasionados. Cada miembro de nuestro equipo trae consigo su propia habilidad distintiva y creatividad, asegurando que cada visita
+                    a nuestra barbería sea una experiencia personalizada y memorable.
+                </p>
+
+
+                <div class=" w-full fade-on texto-adicional">
+                    <p class="w-full">Desde cortes de cabello clásicos y afeitados de precisión hasta tratamientos de barba revitalizantes, ofrecemos una gama completa de servicios diseñados para satisfacer todas tus necesidades de cuidado masculino. Nuestro ambiente relajado
+                        te invita a desconectar del ajetreo diario y a disfrutar de un momento de atención personalizada.</p>
+                </div>
+
+                <button class="w-44 mb-4 p-2 flex gap-3 bg-zinc-950 mas-informacion-btn">
+                    Mas Informacion
+                    <svg class="relative top-1 scale-105 text-yellow-300" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                  </button>
+
+
+            </div>
+
+
+
+        </div>
+
+
+    </section>
+
+
+    <section class=" fade-in w-full p-3 text-white  flex flex-col gap-3 items-center overflow-hidden ">
+        <h2 class="text-2xl  text-white ">Nuestro Equipo</h2>
+
+        <div class="w-full flex items-center justify-center gap-3">
+
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+            <svg class="rotate-90	scale-105	text-yellow-300	" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+                <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+              </svg>
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+
+        </div>
+
+
+
+
+        <ul class="w-full p-2 flex gap-4 flex-col items-center md:flex-row justify-evenly">
+
+            <li class=" shi w-72 h-96	  overflow-hidden relative	 ">
+
+                <div class=" nombres w-full absolute bottom-0 p-4 	">
+                    <h3 class="text-4xl text-center">Alex</h3>
+
+                    <p class="text-center mt-3 text-gray-400">4 anos de experiencia</p>
+                </div>
+                <img class="w-full h-full object-cover" src="https://cdn.pixabay.com/photo/2022/03/29/10/18/hair-stylist-7099174_1280.jpg" alt="">
+            </li>
+
+            <li class=" shi w-72 h-96	  overflow-hidden relative	 ">
+
+                <div class=" nombres w-full absolute bottom-0 p-4 	">
+                    <h3 class="text-4xl text-center">Josue</h3>
+
+                    <p class="text-center mt-3 text-gray-400">2 anos de experiencia</p>
+                </div>
+                <img class="w-full h-full object-cover" src="https://images.pexels.com/photos/1836983/pexels-photo-1836983.jpeg?auto=compress&cs=tinysrgb&w=800" alt="">
+            </li>
+
+
+
+            <li class=" shi w-72 h-96	  overflow-hidden relative	 ">
+                <div class=" nombres w-full absolute bottom-0 p-4 	">
+                    <h3 class="text-4xl text-center">Fabio</h3>
+
+                    <p class="text-center mt-3 text-gray-400">3 anos de experiencia</p>
+                </div>
+                <img class="w-full h-full object-cover " src="https://images.pexels.com/photos/2035227/pexels-photo-2035227.jpeg?auto=compress&cs=tinysrgb&w=800
+    " alt="">
+            </li>
+
+
+
+
+
+
+        </ul>
+    </section>
+
+
+    <section class=" fade-in  w-full p-3 text-white  flex flex-col gap-3 items-center overflow-hidden ">
+        <h2 class="text-2xl  text-white ">Precios</h2>
+
+        <div class="w-full flex items-center justify-center gap-3">
+
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+            <svg class="rotate-90	scale-105	text-yellow-300	" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+                <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+              </svg>
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+
+        </div>
+
+
+        <ul class="w-11/12 flex flex-col gap-4 mt-3 md:w-1/4	">
+
+            <li class="w-full flex justify-between">
+
+                <div class="w-7/12	 flex flex-col gap-2">
+
+                    <h3 class=" text-xl w-full">Corte de Pelo</h3>
+
+                    <p class="text-xs  text-gray-300 w-full">corte de pelo * estilo * lavado</p>
+                </div>
+
+
+                <h4>$34</h4>
+
+
+            </li>
+
+
+            <li class="w-full flex justify-between">
+
+                <div class="w-7/12	 flex flex-col gap-2">
+
+                    <h3 class=" text-xl w-full">Afeitada</h3>
+
+                    <p class="text-xs  text-gray-300 w-full">Afeitada * lavado</p>
+                </div>
+
+
+                <h4>$24</h4>
+
+
+            </li>
+
+
+            <li class="w-full flex justify-between">
+
+                <div class="w-7/12	 flex flex-col gap-2">
+
+                    <h3 class=" text-xl w-full">Corte + Afeitada</h3>
+
+                    <p class="text-xs  text-gray-300 w-full">corte de pelo * afeitado * estilo</p>
+                </div>
+
+
+                <h4>$54</h4>
+
+
+            </li>
+
+
+
+
+            <li class="w-full flex justify-between">
+
+                <div class="w-7/12	 flex flex-col gap-2">
+
+                    <h3 class=" text-xl w-full"> ninos Menores de 12 </h3>
+
+                    <p class="text-xs  text-gray-300 w-full">corte de pelo * afeitado * lavado</p>
+                </div>
+
+
+                <h4>$20</h4>
+
+
+            </li>
+
+            <li class="w-full flex justify-between">
+
+                <div class="w-7/12	 flex flex-col gap-2">
+
+                    <h3 class=" text-xl w-full">Pelo tenido</h3>
+
+                    <p class="text-xs  text-gray-300 w-full"> coloreado de cabellos </p>
+                </div>
+
+
+                <h4>$44</h4>
+
+
+            </li>
+
+
+        </ul>
+
+
+    </section>
+
+
+    <section class=" fade-in  w-full p-3 text-white  flex flex-col gap-3 items-center overflow-hidden">
+        <h2 class="text-2xl  text-white ">Clientes Satisfechos</h2>
+
+
+
+        <div class="w-full flex items-center justify-center gap-3">
+
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+            <svg class="rotate-90	scale-105	text-yellow-300	" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+                <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+              </svg>
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+        </div>
+
+
+
+        <p class="text-sm text-gray-400 md:w-2/4 ">En dragon, Nos Enorgullece Ver Clientes Satisfechos y Sonrientes Salir por Nuestras Puertas Después de Cada Corte. Nuestra Pasión por la Excelencia en el Arte de la Barbería se Refleja en la Alegría que Traemos a Tu Rostro.
+
+        </p>
+
+
+
+        <ul class="w-full p-2 flex gap-4 flex-col items-center md:flex-row justify-evenly items-center">
+
+            <li>
+                <div class="card">
+                    <div class="content flex flex-col items-center">
+                        <p class="heading">Patricio Ochoa
+                        </p>
+                        <p class="para">
+                            Mi experiencia en [Nombre del Barbershop] fue fenomenal. Me hicieron sentir bienvenido desde el momento en que entré y realmente se tomaron el tiempo para entender mi estilo y preferencias. El resultado fue un corte de cabello que superó mis expectativas.
+                            ¡Definitivamente regresaré! </p>
+                        <span class="w-full flex justify-center gap-3"><svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+  </svg>
+  <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+  </svg>
+  <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+  </svg>
+  <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+  </svg>
+  <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+    <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+  </svg>
+
+</span>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="card">
+                    <div class="content flex flex-col items-center">
+                        <p class="heading">Juan Almonte
+                        </p>
+                        <p class="para">
+                            Finalmente encontré mi barbería de confianza en [Nombre del Barbershop]! Cada vez que voy, sé que recibiré un servicio excepcional. El equipo es amable, profesional y siempre está dispuesto a brindarte el mejor estilo. ¡No puedo imaginar ir a otro lado!
+                        </p>
+                        <span class="w-full flex justify-center gap-3"><svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                        
+                        </span> </div>
+                </div>
+            </li>
+            <li class="  p-4">
+                <div class="card">
+                    <div class="content flex flex-col items-center">
+                        <p class="heading">Jose Alba
+                        </p>
+                        <p class="para">
+                            es mi lugar de referencia para cortes de cabello impecables. Siempre salgo sintiéndome y luciendo genial. La atención al detalle y la pasión por su trabajo que tienen aquí es evidente en cada visita. ¡No puedo agradecer lo suficiente al equipo </p>
+                        <span class="w-full flex justify-center gap-3"><svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                          <svg class="text-yellow-400" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                          </svg>
+                        
+                        </span> </div>
+                </div>
+            </li>
+
+
+
+
+        </ul>
+    </section>
+
+
+    <!-- galeria -->
+    <section class=" fade-in w-full p-3 text-white  flex flex-col gap-3 items-center overflow-hidden">
+
+
+
+        <h2 class="text-2xl  text-white  ">Galeria</h2>
+
+        <div class="w-full flex items-center justify-center gap-4">
+
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+            <svg class="rotate-90	scale-105	text-yellow-300	" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+                <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+              </svg>
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+
+        </div>
+
+        <div class="carousel ">
+            <div class="carousel-item active"></div>
+            <div class="carousel-item"></div>
+            <div class="carousel-item"></div>
+            <div class="carousel-item"></div>
+            <div class="carousel-item"></div>
+            <div class="carousel-item"></div>
+
+            <div class="carousel-controls">
+                <div class="carousel-control active"></div>
+                <div class="carousel-control"></div>
+                <div class="carousel-control"></div>
+                <div class="carousel-control"></div>
+                <div class="carousel-control"></div>
+                <div class="carousel-control"></div>
+
+            </div>
+        </div>
+
+
+        <script src="./main.js">
+        </script>
+    </section>
+
+
+    <section class="w-full p-3 text-white   flex flex-col gap-3 items-center overflow-hidden  ">
+
+
+        <h2 class="text-2xl  text-white ">Donde Encontrarnos</h2>
+
+        <div class="w-full flex items-center justify-center gap-4">
+
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+            <svg class="rotate-90	scale-105	text-yellow-300	" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-scissors" viewBox="0 0 16 16">
+                <path d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
+              </svg>
+            <div class="p-1 bg-yellow-400 w-14 rounded-lg"></div>
+
+
+        </div>
+
+        <div class="w-full p-2  flex flex-col gap-6 md:flex-row justify-evenly w-3/4  ">
+
+            <ul class="w-full p-1 flex flex-col gap-6 pt-3 md:w-2/4 items-center justify-center">
+
+
+                <li class="w-full flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stopwatch-fill" viewBox="0 0 16 16">
+    <path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584.531.531 0 0 0 .013-.012l.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354a.717.717 0 0 0-.012.012A6.973 6.973 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1h-3zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0z"/>
+  </svg> 9:00Am - 7:00Pm</li>
+
+                <li class="w-full flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+              </svg>Carretera Moca, Santiago</li>
+
+                <li class="w-full flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg> 870-445-4334</li>
+
+                <li class="w-full flex gap-4"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+              </svg> Miinka@gmail.com</li>
+
+
+
+            </ul>
+
+
+
+            <aside class="w-full h-48 overflow-hidden rounded-lg p-2 md:w-2/4 h-72">
+
+                <div class="w-full h-full rounded-lg  overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.3828260592554!2d-70.52501332461603!3d19.395858441852923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb1d7bf9bd11e0f%3A0xc7703b74f2ff914!2sBarberia%20Pe%C3%B1a!5e0!3m2!1ses-419!2sdo!4v1692226617955!5m2!1ses-419!2sdo"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+
+            </aside>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
